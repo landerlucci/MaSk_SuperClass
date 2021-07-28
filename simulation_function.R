@@ -30,7 +30,7 @@ sim_generation<-function(n=2000,p=10,asym=FALSE,homoscedasticity=TRUE,pi1=0.05,d
   
   if (asym=TRUE){
     x0<-exp(x0)
-    x1<-exp(x1)+0.5
+    x1<-exp(x1)+delta
   }
   
   x<-rbind(x0,x1)
